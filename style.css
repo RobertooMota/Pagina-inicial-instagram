@@ -126,6 +126,7 @@ body{
     height: 3rem;
     width: 10rem;
     background-size: cover;
+    border-radius: 5px;
     
     padding: 1rem;    
 }
