@@ -62,13 +62,102 @@ body{
     flex-direction: column;
     padding: 1.3rem 0;
     width: 100%;
-
+    
 }
 
 .photo-profile{
     border: 2px solid #e6f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    
 }
 
 .photo-profile img{
-    height: 100px;
+    height: 6rem;
+}
+
+.instagram-login{
+    background-color: #0095f6;
+    color:white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout{
+    background-color: #0095f6;
+    margin-top: 1rem;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.not-account{
+    color: rgb(160, 160, 160);
+    padding: 2px;
+}
+
+.color-blue{
+    color: #0095f6 ;
+}
+
+.get-app-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+   
+    
+}
+
+.download{
+    display: flex;
+    justify-content: space-evenly;
+    height: 50%;
+    width: 100%;
+    
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+    
+    padding: 1rem;    
+}
+
+.app-download:nth-child(1){
+    background-image: url('./img/pstore.png');
+}
+
+.app-download:nth-child(2){
+    background-image: url('./img/astore.png');
+}
+
+@media(max-width: 1024px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+}
+
+@media(max-width: 650px){
+
+    body{
+        background-color: white;
+    }
+    .instagram-wrapper{
+        width: 90%;
+    }
+
+    .instagram-celular{
+        display: none;
+    }
+
+    .info-login{
+        width: 90%;
+    }
 }
